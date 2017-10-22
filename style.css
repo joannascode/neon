@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #49494a;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 2px 5px 2px 5px;
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    display: inline-block;
+    color: crimson;
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    text-shadow: 0 0 20px white, 0 0 10px crimson;
+}
+
+li:nth-child(7) {
+    transform: rotate(15deg) translateY(4px);
+    animation: neon 1s infinite linear;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.off {
+    opacity: 0;
+}
